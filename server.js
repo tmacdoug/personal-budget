@@ -25,10 +25,10 @@ const budget = {
 };
 
 
-app.get('budget', (req, res) => {
+app.get('/budget', (req, res) => {
     res.json(budget);
 });
 
 app.listen(port, () => {
-    console.log(`API served at http://159.65.39.16:${port}`);
+    console.log(`API served at http://localhost:${port}`);
 });
