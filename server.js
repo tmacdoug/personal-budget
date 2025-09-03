@@ -30,6 +30,6 @@ app.get('/budget', (req, res) => {
     res.json(budget);
 });
 
-app.listen(port, '0.0.0.0', () => {
-    console.log(`API served at http://localhost:${port}`);
+app.listen(port, '159.65.39.16', () => {
+    console.log(`API served at http://159.65.39.16:${port}`);
 });
