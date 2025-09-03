@@ -25,7 +25,7 @@ const budget = {
 };
 
 
-app.get('/pb/public/budget', (req, res) => {
+app.get('budget', (req, res) => {
     res.json(budget);
 });
 
