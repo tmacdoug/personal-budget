@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-app.use(express.static('public'));
+app.use('/', express.static('public'));
 
 const budget = {
     myBudget: [
@@ -30,6 +30,6 @@ app.get('/budget', (req, res) => {
     res.json(budget);
 });
 
-app.listen(port, '159.65.39.16', () => {
+app.listen(port, , () => {
     console.log(`API served at http://159.65.39.16:${port}`);
 });
